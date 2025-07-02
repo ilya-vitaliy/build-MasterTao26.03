@@ -14,36 +14,46 @@ Use it to make something cool, have fun, and share what you've learned with othe
 */
 @font-face {
   font-family: "ProximaNova";
-  src: url("../assets/fonts/ProximaNova-Light.ttf") format("truetype");
+  src: url("assets/fonts/ProximaNova-Light.ttf") format("truetype");
   font-weight: 300;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "ProximaNova";
-  src: url("../assets/fonts/ProximaNova-Regular.ttf") format("truetype");
+  src: url("assets/fonts/ProximaNova-Regular.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "ProximaNova";
-  src: url("../assets/fonts/ProximaNova-Semibold.ttf") format("truetype");
+  src: url("assets/fonts/ProximaNova-Semibold.ttf") format("truetype");
   font-weight: 600;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "ProximaNova";
-  src: url("../assets/fonts/ProximaNova-Bold.ttf") format("truetype");
+  src: url("assets/fonts/ProximaNova-Bold.ttf") format("truetype");
   font-weight: 700;
   font-style: normal;
   font-display: swap;
 }
+* {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   font-family: "ProximaNova";
   background-color: #282b38;
   color: #ffffff;
+  line-height: 1.3;
+}
+
+html {
+  font-size: 16px;
 }
 
 .fw-300 {
@@ -96,6 +106,10 @@ body {
   background-color: #e58d35;
 }
 
+.logo {
+  max-width: 172px;
+}
+
 .navbar {
   padding: 37px 0 27px;
 }
@@ -111,9 +125,128 @@ body {
   color: #e58d35;
 }
 
+.hamburger {
+  padding: 8px 7px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hamburger:focus {
+  box-shadow: none;
+}
+
+.hamburger-box {
+  width: 27px;
+  height: 25px;
+}
+
+.hamburger-inner,
+.hamburger-inner::before,
+.hamburger-inner::after,
+.hamburger.is-active .hamburger-inner,
+.hamburger.is-active .hamburger-inner::before,
+.hamburger.is-active .hamburger-inner::after {
+  background-color: #fff;
+  width: 27px;
+  height: 2px;
+}
+
+.hamburger--collapse .hamburger-inner {
+  top: auto;
+  bottom: 2px;
+}
+
+.swiper-banner {
+  width: 100%;
+  max-width: 1820px;
+}
+.swiper-banner .swiper-slide {
+  min-height: 700px;
+  background-color: #363a4d;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 20px;
+}
+.swiper-banner .swiper-slide .container {
+  margin-top: 163px;
+  padding-bottom: 73px;
+}
+.swiper-banner .swiper-pagination-bullet {
+  width: 8px;
+  height: 8px;
+  border: 2px solid #fff;
+  background-color: transparent;
+  opacity: 1;
+  cursor: pointer;
+}
+.swiper-banner .swiper-pagination-bullet-active {
+  background-color: #fff;
+}
+.swiper-banner .swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
+.swiper-banner .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+  margin: 0 var(--swiper-pagination-bullet-horizontal-gap, 13px);
+}
+.swiper-banner .swiper-horizontal > .swiper-pagination-bullets,
+.swiper-banner .swiper-pagination-bullets.swiper-pagination-horizontal {
+  top: calc(100% - 59px);
+}
+
+.banner-title {
+  font-size: 56px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 24px;
+  max-width: 515px;
+  margin-bottom: 10px;
+  line-height: 1.26;
+}
+
+.banner-description {
+  max-width: 600px;
+  font-size: 20px;
+  font-weight: 300;
+  max-width: 340px;
+  margin-bottom: 37px;
+  line-height: 1.35;
+}
+
 @media screen and (max-width: 1199px) {
   .navbar-nav {
     max-width: 540px;
+  }
+}
+@media screen and (max-width: 991px) {
+  .logo {
+    max-width: 126px;
+  }
+  .navbar {
+    padding: 17px 0 15px;
+  }
+  .navbar-collapse {
+    background-color: #363a4d;
+    margin: 0 -11px;
+    padding: 0px 40px 0px;
+    text-align: center;
+    transform: translate(0, 12px);
+  }
+  .navbar-nav {
+    padding: 37px 0 34px;
+  }
+  .navbar-nav + .btn {
+    margin-bottom: 60px;
+    width: 100%;
+    max-width: 295px;
+    font-size: 16px;
+    padding: 21px 27px;
+  }
+  .navbar-nav .nav-link {
+    color: #fff;
+    font-size: 24px;
+    line-height: 222%;
+  }
+  .navbar-nav .nav-link:hover {
+    color: #e58d35;
   }
 }
 /*# sourceMappingURL=style.css.map */
