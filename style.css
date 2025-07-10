@@ -157,7 +157,6 @@ html {
 }
 
 .swiper-banner {
-  width: 100%;
   max-width: 1820px;
 }
 .swiper-banner .swiper-slide {
@@ -234,6 +233,9 @@ html {
 }
 
 @media (min-width: 992px) {
+  .swiper-banner {
+    width: calc(100% - 24px);
+  }
   .swiper-banner .swiper-slide {
     border-radius: 20px;
   }
@@ -248,7 +250,7 @@ html {
     max-width: 540px;
   }
 }
-@media screen and (max-width: 991.99px) {
+@media screen and (max-width: 991.98px) {
   .logo {
     max-width: 126px;
   }
@@ -284,7 +286,7 @@ html {
     display: flex;
     align-items: center;
     text-align: center;
-    min-height: calc(100vh - 72px);
+    min-height: calc(100vh - var(--header-height));
   }
   .swiper-banner .swiper-slide:before {
     content: "";
