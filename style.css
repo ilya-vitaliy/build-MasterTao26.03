@@ -322,6 +322,7 @@ html {
 
 .calculation-form {
   max-width: 626px;
+  height: 597px;
   background: #363a4d;
   border-radius: 20px;
   padding: 50px 50px 60px;
@@ -387,10 +388,7 @@ input[type=checkbox] + label:before {
 
 input[type=checkbox]:checked + label:before {
   content: "";
-  background-image: url("assets/img/icon-checked.svg");
-  background-color: #fff;
-  background-repeat: no-repeat;
-  background-position: center;
+  background: url("assets/img/icon-checked.svg") no-repeat center #fff;
 }
 
 @media (min-width: 992px) {
