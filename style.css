@@ -420,7 +420,7 @@ input[type=checkbox] + label:hover::before {
   border-color: #e58d35;
 }
 input[type=checkbox]::placeholder {
-  color: #ffffff;
+  color: #cbcbcb;
 }
 
 /* Chrome, Safari, Edge, Opera */
