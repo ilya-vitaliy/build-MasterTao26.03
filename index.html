@@ -8,6 +8,7 @@
     <title>MasterTao</title>
     <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css" />
     <link rel="stylesheet" type="text/css" href="assets/css/hamburgers.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/nice-select2.css" />
     <link rel="stylesheet" type="text/css" href="assets/css/swiper-bundle.min.css" />
     <link rel="stylesheet" type="text/css" href="style.css" />
 </head>
@@ -133,7 +134,11 @@
                     <div class="form-column">
                         <div class="input-box">
                             <label for="product-category">Категория товара:</label>
-                            <input id="product-category" type="text" placeholder="Категория товара" inputmode="text" />
+                            <select id="product-category">
+                                <option value="1">Big size</option>
+                                <option value="2">Midle size</option>
+                                <option value="3">Little size</option>
+                            </select>
                         </div>
                         <div class="input-box">
                             <label for="cargo-weight">Вес груза (кг):</label>
@@ -178,7 +183,11 @@
 				>Следующий шаг <img src="assets/img/icon-arrow-left.svg" alt="arrow"
 			/></a>
             </form>
-            <!-- <img src="assets/img/calculation-person.png" alt="person" /> -->
+            <img
+			src="assets/img/calculation-person.png"
+			class="calculation-img"
+			alt="person"
+		/>
         </div>
     </section>
     <section class="services">
@@ -230,5 +239,6 @@
 </footer>
 <script src="assets/js/bootstrap.bundle.min.js"></script>
 <script src="assets/js/swiper-bundle.min.js"></script>
+<script src="assets/js/nice-select2.js"></script>
 <script src="assets/js/custom.js"></script>
 </body>
