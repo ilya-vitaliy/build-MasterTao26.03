@@ -371,7 +371,8 @@ html {
 }
 
 .navbar {
-  padding: 25px 0 40px;
+  padding: 37px 0 27px;
+  white-space: nowrap;
 }
 
 .navbar-nav {
@@ -523,6 +524,11 @@ html {
   }
 }
 @media (min-width: 1400px) {
+  .swiper-banner .swiper-slide .container {
+    padding: 163px 72px 73px;
+  }
+}
+@media screen and (max-width: 1399.99px) {
   .swiper-banner .swiper-slide .container {
     padding: 163px 72px 73px;
   }
