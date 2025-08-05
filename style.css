@@ -464,6 +464,7 @@ html {
 .swiper-banner .swiper-horizontal > .swiper-pagination-bullets,
 .swiper-banner .swiper-pagination-bullets.swiper-pagination-horizontal {
   top: calc(100% - 59px);
+  margin: 0 auto;
 }
 
 .banner-title {
@@ -559,6 +560,75 @@ html {
 .advantages .swiper-horizontal > .swiper-pagination-bullets,
 .advantages .swiper-pagination-bullets.swiper-pagination-horizontal {
   top: calc(100% - 59px);
+  margin: 0 auto;
+}
+
+.card {
+  border-radius: 20px;
+  background-color: #363a4d;
+  color: #ffffff;
+  border: none;
+  width: 360px;
+}
+.card__img-box {
+  border-radius: 20px 20px 0 0;
+  overflow: hidden;
+}
+.card-body {
+  padding: 27px 20px;
+}
+.card-title {
+  font-size: 22px;
+  margin-bottom: 12px;
+}
+.card__options-list {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 34px;
+  padding: 0;
+  margin-bottom: 8px;
+}
+.card__options-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+.card .card__price {
+  margin-bottom: 22px;
+  font-size: 22px;
+}
+.card .card__price span:first-child {
+  color: #a3a3a3;
+}
+.card .card__price strong {
+  font-size: 45px;
+  line-height: 125%;
+}
+.card__btn-row {
+  gap: 14px;
+  display: flex;
+}
+.card__btn-row .btn {
+  width: 50%;
+}
+.card.card_services {
+  position: relative;
+}
+.card.card_services::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(0deg, rgba(4, 5, 17, 0.91) 0%, rgba(88, 88, 88, 0) 100%);
+  border-radius: 20px;
+}
+.card.card_services .card-body {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  z-index: 1;
 }
 
 @media (min-width: 992px) {
