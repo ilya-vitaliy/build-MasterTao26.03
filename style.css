@@ -674,6 +674,46 @@ html {
   margin-top: 32px;
 }
 
+.about-section .container {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 35px;
+}
+
+.template-title_case-2 {
+  text-align: left;
+  padding-top: 65px;
+}
+.template-title_case-2 h2::after {
+  background-color: #89c249;
+}
+
+.about-text__description {
+  max-width: 555px;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 170%;
+  color: #fff;
+  margin: 0 auto;
+}
+.about-text__description p {
+  margin-bottom: 27px;
+}
+.about-text__description p:last-child {
+  margin-bottom: 0;
+}
+
+.about__img-box {
+  max-width: 550px;
+  height: auto;
+}
+.about__img-box img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
 @media (min-width: 992px) {
   .swiper-banner {
     width: calc(100% - 24px);
@@ -708,6 +748,26 @@ html {
   }
   .bg-accent:before {
     inset: 0 12px;
+  }
+  .about-section .container {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 42px;
+    justify-content: center;
+    text-align: justify;
+  }
+  .about-section .template-title_case-2 h2 {
+    text-align: center;
+  }
+  .about-section .template-title_case-2 h2::after {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+@media screen and (max-width: 1024.99px) {
+  .template-title_case-2 {
+    padding-top: 0;
   }
 }
 @media screen and (max-width: 991.98px) {
@@ -819,6 +879,29 @@ html {
     max-width: 218px;
     margin: 0 auto 40px;
   }
+  .about-section .template-title_case-2 h2 {
+    text-align: center;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 125%;
+  }
+  .about-section .template-title_case-2 h2::after {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .about-section .container {
+    flex-direction: column;
+    align-items: center;
+    text-align: justify;
+    gap: 47px;
+  }
+  .about-section .container .about__img-box {
+    max-width: 400px;
+    height: auto;
+  }
+  .about-section .container .about-text__description {
+    margin: 0 auto;
+  }
 }
 @media screen and (max-width: 767.98px) {
   .calculation-form {
@@ -838,6 +921,27 @@ html {
   }
   .form-column {
     width: 100%;
+  }
+  .about-section .template-title_case-2 {
+    padding-top: 0px;
+    margin-bottom: -25px;
+  }
+  .about-section .about-text__description {
+    text-align: justify;
+    max-width: 100%;
+  }
+  .about-section .container .about__img-box img {
+    width: 100%;
+    max-width: 300px;
+  }
+}
+@media screen and (max-width: 575.99px) {
+  .about__img-box {
+    max-width: 300px;
+  }
+  .about-text__description {
+    font-size: 16px;
+    line-height: 150%;
   }
 }
 @media screen and (max-height: 375.99px) {
