@@ -597,7 +597,7 @@ html {
   background-color: #363a4d;
   color: #ffffff;
   border: none;
-  width: 360px;
+  max-width: 360px;
 }
 .card__img-box {
   border-radius: 20px 20px 0 0;
