@@ -863,6 +863,91 @@ textarea {
   border-radius: 20px;
 }
 
+footer .footer-element::before {
+  content: "";
+  display: block;
+  background-color: #e58d35;
+  max-width: 1820px;
+  height: 2px;
+  margin-bottom: 41px;
+  pointer-events: none;
+}
+footer img,
+footer svg {
+  margin-bottom: 29px;
+}
+
+.footer-logo p {
+  margin-bottom: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 162%;
+  color: #fff;
+  padding-right: 107px;
+}
+
+.footer-logo a {
+  color: #fff;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 162%;
+}
+
+.footer-container {
+  display: flex;
+}
+
+.footer ol,
+.footer ul {
+  padding-left: 0rem;
+}
+
+.footer__navigation {
+  display: flex;
+  gap: 100px;
+  max-width: 706px;
+  max-height: 261px;
+}
+
+.footer__title {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.footer__title a {
+  display: block;
+}
+
+.footer__title {
+  max-width: 117px;
+}
+.footer__title img {
+  max-height: 33px;
+  margin-top: 20px;
+}
+
+.footer__nav ul {
+  list-style: none;
+  margin: 0;
+}
+.footer__nav ul a {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 161%;
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+  color: #85899c;
+}
+
+.footer__nav li {
+  margin-bottom: 8px;
+}
+
+.footer__nav a {
+  color: white;
+}
+
 @media (min-width: 992px) {
   .swiper-banner {
     width: calc(100% - 24px);
