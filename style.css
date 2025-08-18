@@ -748,7 +748,7 @@ html {
   justify-content: center;
   align-items: center;
   gap: 60px;
-  width: 310px;
+  width: 100%;
   height: 68px;
   padding: 0 20px;
 }
@@ -1101,10 +1101,19 @@ textarea {
     flex-shrink: 0;
     margin-left: auto;
   }
-  .faq-form__title,
-  .faq-form__subtitle {
+  .faq-form__title .faq-form__subtitle {
     text-align: center;
     padding: 0px 12px 0px 12px;
+    font-weight: 400;
+    line-height: 126%;
+  }
+  .faq-form {
+    min-width: 335px;
+    padding: 38px 40px;
+    margin: 0 auto;
+    width: 390px;
+    line-height: 146%;
+    font-weight: 600;
   }
   .cooperation .container .template-title {
     font-weight: 700;
@@ -1116,8 +1125,9 @@ textarea {
   .cooperation .container .template-title h3 {
     font-weight: 400;
     font-size: 16px;
-    line-height: 150%;
+    line-height: 125%;
     text-transform: none;
+    text-align: center;
   }
   .cooperation__content {
     flex-direction: column;
@@ -1130,6 +1140,9 @@ textarea {
     font-size: 16px;
     line-height: 150%;
     text-align: justify;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
   .order-mobile-negative {
     order: -1;
@@ -1165,6 +1178,10 @@ textarea {
   .about-section .container .about__img-box img {
     width: 100%;
     max-width: 300px;
+  }
+  .faq-form {
+    max-width: 335px;
+    padding: 38px 20px;
   }
 }
 @media screen and (max-width: 575.99px) {
