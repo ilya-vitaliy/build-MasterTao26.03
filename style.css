@@ -863,14 +863,18 @@ textarea {
   border-radius: 20px;
 }
 
+footer {
+  max-height: 368px;
+}
 footer .footer-element::before {
   content: "";
   display: block;
   background-color: #e58d35;
-  max-width: 1820px;
+  max-width: 1140px;
   height: 2px;
   margin-bottom: 41px;
   pointer-events: none;
+  margin: 0 auto 41px;
 }
 footer img,
 footer svg {
@@ -884,6 +888,7 @@ footer svg {
   line-height: 162%;
   color: #fff;
   padding-right: 107px;
+  white-space: nowrap;
 }
 
 .footer-logo a {
@@ -905,8 +910,8 @@ footer svg {
 .footer__navigation {
   display: flex;
   gap: 100px;
-  max-width: 706px;
   max-height: 261px;
+  white-space: nowrap;
 }
 
 .footer__title {
@@ -919,9 +924,6 @@ footer svg {
   display: block;
 }
 
-.footer__title {
-  max-width: 117px;
-}
 .footer__title img {
   max-height: 33px;
   margin-top: 20px;
@@ -961,6 +963,12 @@ footer svg {
     gap: 48px 24px;
   }
 }
+@media (min-width: 1200px) {
+  section {
+    margin-left: 37px;
+    margin-right: 37px;
+  }
+}
 @media screen and (max-width: 1399.99px) {
   .navbar-nav {
     max-width: 540px;
@@ -998,10 +1006,22 @@ footer svg {
     left: 50%;
     transform: translateX(-50%);
   }
+  .footer__navigation {
+    gap: 70px;
+  }
+  .footer-logo p {
+    padding-right: 100px;
+  }
 }
 @media screen and (max-width: 1024.99px) {
   .template-title_case-2 {
     padding-top: 0;
+  }
+  .footer__navigation {
+    gap: 50px;
+  }
+  .footer-logo p {
+    padding-right: 56px;
   }
 }
 @media screen and (max-width: 991.98px) {
@@ -1232,6 +1252,29 @@ footer svg {
   .order-mobile-negative {
     order: -1;
   }
+  .footer__navigation {
+    display: none;
+  }
+  .footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .footer__title {
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+  }
+  .footer-logo {
+    max-width: 280px;
+  }
+  .footer-logo p {
+    padding-right: 0px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 162%;
+  }
 }
 @media screen and (max-width: 767.98px) {
   .calculation-form {
@@ -1267,6 +1310,29 @@ footer svg {
   .faq-form {
     max-width: 335px;
     padding: 38px 20px;
+  }
+  .footer__navigation {
+    display: none;
+  }
+  .footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .footer__title {
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+  }
+  .footer-logo {
+    max-width: 280px;
+  }
+  .footer-logo p {
+    padding-right: 0px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 162%;
   }
 }
 @media screen and (max-width: 575.99px) {
