@@ -235,7 +235,6 @@ html {
 .btn:active, .btn:focus {
   background-color: transparent !important;
   border-color: #e58d35 !important;
-  box-shadow: none !important;
 }
 .btn:hover {
   background-color: transparent;
@@ -443,7 +442,7 @@ html {
 }
 
 .navbar {
-  padding: 37px 0 27px;
+  padding: 27px 0 37px;
   white-space: nowrap;
 }
 
@@ -870,7 +869,6 @@ footer .footer-element::before {
   content: "";
   display: block;
   background-color: #e58d35;
-  max-width: 1140px;
   height: 2px;
   margin-bottom: 41px;
   pointer-events: none;
