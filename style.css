@@ -939,6 +939,9 @@ footer svg {
   text-decoration-skip-ink: none;
   color: #85899c;
 }
+.footer__nav ul a:hover {
+  color: #e58d35;
+}
 
 .footer__nav li {
   margin-bottom: 8px;
