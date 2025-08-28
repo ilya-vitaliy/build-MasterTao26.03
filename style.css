@@ -694,7 +694,6 @@ html {
 .about-section .container {
   display: flex;
   align-items: flex-start;
-  flex-wrap: wrap;
   gap: 35px;
 }
 
@@ -1023,9 +1022,6 @@ footer svg {
   .footer__navigation {
     gap: 70px;
   }
-  .footer-logo p {
-    padding-right: 100px;
-  }
 }
 @media screen and (max-width: 1024.99px) {
   .template-title_case-2 {
@@ -1034,8 +1030,8 @@ footer svg {
   .footer__navigation {
     gap: 50px;
   }
-  .footer-logo p {
-    padding-right: 56px;
+  .footer-container {
+    gap: 50px;
   }
 }
 @media screen and (max-width: 991.98px) {
@@ -1201,7 +1197,7 @@ footer svg {
     font-weight: 300;
     font-size: 14px;
     line-height: 145%;
-    color: #282B38;
+    color: #282b38;
   }
   .faq-form {
     min-width: 335px;
@@ -1230,7 +1226,6 @@ footer svg {
     min-width: 335px;
     padding: 38px 40px;
     margin: 0 auto;
-    width: 390px;
     line-height: 146%;
     font-weight: 600;
   }
@@ -1322,7 +1317,6 @@ footer svg {
     max-width: 300px;
   }
   .faq-form {
-    max-width: 335px;
     padding: 38px 20px;
   }
   .footer__navigation {
@@ -1356,6 +1350,16 @@ footer svg {
   .about-text__description {
     font-size: 16px;
     line-height: 150%;
+  }
+  .faq-form__title {
+    text-align: center;
+  }
+  .faq-form__subtitle {
+    text-align: center;
+    font-weight: 400;
+  }
+  .faq-form {
+    padding: 38px 20px;
   }
 }
 @media screen and (max-height: 375.99px) {
